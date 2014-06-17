@@ -70,7 +70,7 @@ header#top-nav
   width: 90%
   margin: 0 auto
   height: 100%
-  article.news
+  article
     padding: 20px
     background-color: $white
     h1,h2 
@@ -78,13 +78,22 @@ header#top-nav
     h1
       border-bottom: 1px solid $blacky
       margin-bottom: 19px
+      margin-top: 25px
       font-size: 38px
+      &:first-child
+        margin-top: 0
     h2
       font-size: 19px
       line-height: 31px
     p
       font-family: $body-font
-
+    img
+      width: 400px
+      margin: 0 auto
+    .orbit-next, .orbit-prev
+      background-color: $light-black
+    .orbit-slide-number
+      color: $blacky
 footer
   border-top: 1px solid $light-black
   margin-top: 50px
