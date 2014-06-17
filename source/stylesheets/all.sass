@@ -1,0 +1,123 @@
+@import "reset-css"
+@import "normalize-css"
+@import "foundation"
+@import url(http://fonts.googleapis.com/css?family=Economica:400,700,400italic)
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700)
+$logo-font: "Helvetica", Helvetica, Arial, sans-serif
+$title-font: 'Economica', sans-serif
+$body-font: 'Lato', sans-serif
+$white: #fff
+$blacky: rgb(41,38,39)
+$gray: #eee
+$dark-gray: #CECBCB
+$light-black: rgba(0,0,0,0.3)
+body
+  background: image-url('common/bg.png') repeat
+
+.inner-wrap
+  height: 100%
+
+header#top-nav
+  height: 85px
+  background: $white
+  text-transform: uppercase
+  box-shadow: 2px 2px 2px $dark-gray
+
+  img
+    position: absolute
+    opacity: 0.2
+    height: 25px
+    width: auto
+    top: 28px
+    left: 50%
+    margin-left: -135px
+
+  h1
+    letter-spacing: 4px
+    position: absolute
+    left: 50%
+    margin-left: -84px
+
+    font-size: 49px
+    font-family: $logo-font
+    a
+      color: $blacky
+  h2
+    position: absolute
+    top: 54px
+    left: 50%
+    letter-spacing: 3.9px
+    margin-left: -80px
+
+    font-size: 10px
+    font-family: $logo-font
+    font-weight: lighter
+  
+  aside ul li
+    label
+      letter-spacing: 1px
+      color: $white
+      font-family: $title-font
+    a
+      font-size: 11px
+      font-family: $body-font
+      background-color: $white
+      color: $blacky
+      border-color: $light-black
+.container
+  position: relative
+  top: 20px
+  width: 90%
+  margin: 0 auto
+  height: 100%
+  article.news
+    padding: 20px
+    background-color: $white
+    h1,h2 
+      font-family: $title-font
+    h1
+      border-bottom: 1px solid $blacky
+      margin-bottom: 19px
+      font-size: 38px
+    h2
+      font-size: 19px
+      line-height: 31px
+    p
+      font-family: $body-font
+
+footer
+  border-top: 1px solid $light-black
+  margin-top: 50px
+  height: 100%
+  width: 100%
+  background-color: $white
+  position: relative
+  small
+    font-size: 14px
+    color: $blacky
+    width: 165px
+    display: block
+    margin: 10px auto
+    padding-bottom: 10px
+  ul
+    display: block
+    width: 265px
+    margin: 25px auto 0
+    li
+      display: inline-block
+      a
+        display: inline-block
+        background-image: image-url('icons-sprite.png')
+        background-repeat: no-repeat
+        margin-right: 18px
+        width: 48px
+        height: 48px
+        text-indent: -9999px
+        &.facebook
+          background-position: -101px -1px
+        &.google
+          background-position: -52px -1px
+        &.twitter
+          background-position: -148px -2px
+        &.arrow
+          background-position: 0px -1px

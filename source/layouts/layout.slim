@@ -1,0 +1,15 @@
+doctype html
+html lang="pl"
+  head
+    meta charset="utf-8" name="viewport" content="width=device-width"
+    title' Pracownia Rysunku DOMIN - nauka rysunku, kurs na architekturę
+    = stylesheet_link_tag "all"
+  body
+    .off-canvas-wrap data-offcanvas="" 
+      .inner-wrap
+        = partial "layouts/header.slim"
+        .container
+          = yield
+        = partial "layouts/footer.slim"
+      a.exit-off-canvas
+    = javascript_include_tag "all"
