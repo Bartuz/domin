@@ -1,0 +1,25 @@
+= javascript_include_tag "https://maps.googleapis.com/maps/api/js?sensor=false"
+article
+  .map data-map=""
+javascript:
+  var map, mapSettings, markerSettings, position;
+
+  position = new google.maps.LatLng(52.229289, 21.000017);
+
+  mapSettings = {
+    zoom: 16,
+    center: position,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    streetViewControl: false,
+    mapTypeControl: false
+  };
+
+  map = new google.maps.Map(document.querySelector('[data-map]'), mapSettings);
+
+  markerSettings = {
+    position: position,
+    map: map,
+    flat: true
+  };
+
+  new google.maps.Marker(markerSettings);
